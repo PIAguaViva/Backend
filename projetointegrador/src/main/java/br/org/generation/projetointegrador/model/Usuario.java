@@ -38,13 +38,13 @@ public class Usuario {
 	
 	
 	@NotBlank (message = "O campo Senha é obrigatório")
-	@Size(min=6, max=255, message= "A senha deve conter no mínimo 6 e no máximo 255 caracteres")
+	@Size(min=6, message= "A senha deve conter no mínimo 6 caracteres")
 	private String senha;
 	
 	@Size(max=1000, message= "A foto deve conter no máximo 1000 caracteres")
 	private String foto;
 
-	@OneToMany(mappedBy="usuario", cascade=CascadeType.ALL)
+	@OneToMany(mappedBy="usuario", cascade=CascadeType.REMOVE)
 	@JsonIgnoreProperties("usuario")
 	private List<Postagem> postagem;
 
