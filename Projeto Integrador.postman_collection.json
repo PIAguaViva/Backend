@@ -1,211 +1,557 @@
 {
-	"id": "28286975-bc54-db0a-b550-9fa254541eb1",
-	"name": "Projeto Integrador",
-	"description": "",
-	"order": [],
-	"folders": [
+	"info": {
+		"_postman_id": "adf1e6fe-269a-4905-9fd1-13c8fb86c638",
+		"name": "Projeto Integrador",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
 		{
 			"name": "Tema",
-			"description": "",
-			"collectionId": "28286975-bc54-db0a-b550-9fa254541eb1",
-			"order": [
-				"0517135f-1ce9-341c-cb56-d5ed435a0e86",
-				"58987a07-a47c-4e62-7605-98220861fced",
-				"f02f8e4d-cbf7-c0d0-77ee-6c727dfb18ca",
-				"75a79bbf-6b48-3f27-488c-3c2f920a6a73",
-				"a9efff54-3b95-f79e-e659-182ee657a3bf",
-				"70304ff5-80ff-943c-d425-362944a78d47"
-			],
-			"owner": "18474083",
-			"folders_order": [],
-			"id": "92325633-28d4-569f-252f-2522c58c9c69"
-		}
-	],
-	"folders_order": [
-		"92325633-28d4-569f-252f-2522c58c9c69"
-	],
-	"timestamp": 1643205433935,
-	"owner": "18474083",
-	"public": false,
-	"requests": [
-		{
-			"id": "0517135f-1ce9-341c-cb56-d5ed435a0e86",
-			"headers": "Content-Type: application/json\n",
-			"headerData": [
+			"item": [
 				{
-					"key": "Content-Type",
-					"value": "application/json",
-					"description": "",
-					"enabled": true
+					"name": "Buscar temas por Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/temas/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"temas",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar todos os temas",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/temas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"temas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar temas por título",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/temas/tema/faça",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"temas",
+								"tema",
+								"faça"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Criar temas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tema\" : \"Teste1\",\r\n    \"descricao\" : \"Primeiro Tema\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/temas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"temas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar temas",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/temas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"temas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar temas",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/temas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"temas"
+							]
+						}
+					},
+					"response": []
 				}
-			],
-			"url": "http://localhost:8080/temas/",
-			"folder": "92325633-28d4-569f-252f-2522c58c9c69",
-			"queryParams": [],
-			"preRequestScript": null,
-			"pathVariables": {},
-			"pathVariableData": [],
-			"method": "GET",
-			"data": [],
-			"dataMode": "raw",
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1643206082931,
-			"name": "Pesquisar todos os temas",
-			"description": "",
-			"collectionId": "28286975-bc54-db0a-b550-9fa254541eb1",
-			"responses": [],
-			"rawModeData": "{\n\t\"tema\" : \"tema1 teste\", \n\t\"descricao\" : \"descricao1 teste\"\n}"
+			]
 		},
 		{
-			"id": "58987a07-a47c-4e62-7605-98220861fced",
-			"headers": "Content-Type: application/json\n",
-			"headerData": [
+			"name": "Postagem",
+			"item": [
 				{
-					"key": "Content-Type",
-					"value": "application/json",
-					"description": "",
-					"enabled": true
+					"name": "Buscar todas as postagens",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/postagens",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"postagens"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar por título",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/postagens/titulo/teste",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"postagens",
+								"titulo",
+								"teste"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar por Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/postagens/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"postagens",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Criar postagem",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\" : \"Teste3\",\r\n    \"regiao\" : \"SP\",\r\n    \"texto\" : \"Terceiro teste de postagem\",\r\n    \"foto\" : \"...\",\r\n    \"tema\" : {\r\n        \"id\" : 1\r\n    }\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/postagens",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"postagens"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar postagem",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\" : 1,\r\n    \"titulo\" : \"TesteNovo\",\r\n    \"regiao\" : \"SP\",\r\n    \"texto\" : \"Novo teste de postagem\",\r\n    \"foto\" : \"...\",\r\n    \"tema\" : {\r\n        \"id\" : 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/postagens",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"postagens"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Apagar postagem",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/postagens/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"postagens",
+								"2"
+							]
+						}
+					},
+					"response": []
 				}
-			],
-			"url": "http://localhost:8080/temas/2",
-			"folder": "92325633-28d4-569f-252f-2522c58c9c69",
-			"queryParams": [],
-			"preRequestScript": null,
-			"pathVariables": {},
-			"pathVariableData": [],
-			"method": "GET",
-			"data": [],
-			"dataMode": "raw",
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1643206086743,
-			"name": "Pesquisar por ID",
-			"description": "",
-			"collectionId": "28286975-bc54-db0a-b550-9fa254541eb1",
-			"responses": [],
-			"rawModeData": "{\n\t\"tema\" : \"tema1 teste\", \n\t\"descricao\" : \"descricao1 teste\"\n}"
+			]
 		},
 		{
-			"id": "70304ff5-80ff-943c-d425-362944a78d47",
-			"headers": "Content-Type: application/json\n",
-			"headerData": [
+			"name": "Usuário",
+			"item": [
 				{
-					"key": "Content-Type",
-					"value": "application/json",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"url": "http://localhost:8080/temas/3",
-			"folder": "92325633-28d4-569f-252f-2522c58c9c69",
-			"queryParams": [],
-			"preRequestScript": null,
-			"pathVariables": {},
-			"pathVariableData": [],
-			"method": "DELETE",
-			"data": [],
-			"dataMode": "raw",
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1643206172302,
-			"name": "Deletar Tema",
-			"description": "",
-			"collectionId": "28286975-bc54-db0a-b550-9fa254541eb1",
-			"responses": [],
-			"rawModeData": "{\n\t\"tema\" : \"tema1 teste\", \n\t\"descricao\" : \"descricao1 teste\"\n}"
-		},
-		{
-			"id": "75a79bbf-6b48-3f27-488c-3c2f920a6a73",
-			"headers": "Content-Type: application/json\n",
-			"headerData": [
+					"name": "Buscar todas as postagens",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/postagens",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"postagens"
+							]
+						}
+					},
+					"response": []
+				},
 				{
-					"key": "Content-Type",
-					"value": "application/json",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"url": "http://localhost:8080/temas/",
-			"queryParams": [],
-			"preRequestScript": null,
-			"pathVariables": {},
-			"pathVariableData": [],
-			"method": "POST",
-			"data": [],
-			"dataMode": "raw",
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1643206142334,
-			"name": "Criar Tema",
-			"description": "",
-			"collectionId": "28286975-bc54-db0a-b550-9fa254541eb1",
-			"responses": [],
-			"rawModeData": "{\n\t\"tema\" : \"tema3 teste\", \n\t\"descricao\" : \"descricao3 teste\"\n}"
-		},
-		{
-			"id": "a9efff54-3b95-f79e-e659-182ee657a3bf",
-			"headers": "Content-Type: application/json\n",
-			"headerData": [
+					"name": "Buscar por título",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/postagens/titulo/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"postagens",
+								"titulo",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
 				{
-					"key": "Content-Type",
-					"value": "application/json",
-					"description": "",
-					"enabled": true
-				}
-			],
-			"url": "http://localhost:8080/temas/",
-			"folder": "92325633-28d4-569f-252f-2522c58c9c69",
-			"queryParams": [],
-			"preRequestScript": null,
-			"pathVariables": {},
-			"pathVariableData": [],
-			"method": "PUT",
-			"data": [],
-			"dataMode": "raw",
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1643206146946,
-			"name": "Atualizar Tema",
-			"description": "",
-			"collectionId": "28286975-bc54-db0a-b550-9fa254541eb1",
-			"responses": [],
-			"rawModeData": "{\n\t\"id\" : 1,\n\t\"tema\" : \"Faça você mesmo\", \n\t\"descricao\" : \"descricao1 teste\"\n\t\n}"
-		},
-		{
-			"id": "f02f8e4d-cbf7-c0d0-77ee-6c727dfb18ca",
-			"headers": "Content-Type: application/json\n",
-			"headerData": [
+					"name": "Buscar por Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/postagens/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"postagens",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
 				{
-					"key": "Content-Type",
-					"value": "application/json",
-					"description": "",
-					"enabled": true
+					"name": "Criar postagem",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"titulo\" : \"Teste1\",\r\n    \"regiao\" : \"SP\",\r\n    \"texto\" : \"Primeiro teste de postagem\",\r\n    \"foto\" : \"...\",\r\n    \"tema\" : {\r\n        \"id\" : 1\r\n    },\r\n    \"usuario\" : {\r\n        \"id\" : 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/postagens",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"postagens"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar postagem",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/postagens",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"postagens"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Apagar postagem",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/postagens/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"postagens",
+								"2"
+							]
+						}
+					},
+					"response": []
 				}
-			],
-			"url": "http://localhost:8080/temas/tema/faça",
-			"folder": "92325633-28d4-569f-252f-2522c58c9c69",
-			"queryParams": [],
-			"preRequestScript": null,
-			"pathVariables": {},
-			"pathVariableData": [],
-			"method": "GET",
-			"data": [],
-			"dataMode": "raw",
-			"tests": null,
-			"currentHelper": "normal",
-			"helperAttributes": {},
-			"time": 1643206137696,
-			"name": "Pesquisar por Tema",
-			"description": "",
-			"collectionId": "28286975-bc54-db0a-b550-9fa254541eb1",
-			"responses": [],
-			"rawModeData": "{\n\t\"tema\" : \"tema1 teste\", \n\t\"descricao\" : \"descricao1 teste\"\n}"
+			]
 		}
 	]
 }
