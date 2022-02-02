@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "adf1e6fe-269a-4905-9fd1-13c8fb86c638",
+		"_postman_id": "4309d16d-d6f5-4cc4-bf35-631397182ea5",
 		"name": "Projeto Integrador",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -15,7 +15,13 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic dXN1YXJpbzFAZW1haWwuY29tOnNlbmhhMTI0",
+								"type": "default"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "",
@@ -26,7 +32,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/temas/4",
+							"raw": "http://localhost:8080/temas/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -34,7 +40,7 @@
 							"port": "8080",
 							"path": [
 								"temas",
-								"4"
+								"1"
 							]
 						}
 					},
@@ -47,10 +53,16 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic dXN1YXJpbzFAZW1haWwuY29tOnNlbmhhMTI0",
+								"type": "default"
+							}
+						],
 						"body": {
 							"mode": "raw",
-							"raw": "",
+							"raw": "{\r\n\r\n    \r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -78,7 +90,13 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic dXN1YXJpbzFAZW1haWwuY29tOnNlbmhhMTI0",
+								"type": "default"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "",
@@ -89,7 +107,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/temas/tema/faça",
+							"raw": "http://localhost:8080/temas/tema/teste",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -98,7 +116,7 @@
 							"path": [
 								"temas",
 								"tema",
-								"faça"
+								"teste"
 							]
 						}
 					},
@@ -108,10 +126,16 @@
 					"name": "Criar temas",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic dXN1YXJpbzFAZW1haWwuY29tOnNlbmhhMTI0",
+								"type": "default"
+							}
+						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"tema\" : \"Teste1\",\r\n    \"descricao\" : \"Primeiro Tema\"\r\n}",
+							"raw": "{\r\n    \"tema\" : \"Teste2\",\r\n    \"descricao\" : \"Segundo Tema\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -136,7 +160,13 @@
 					"name": "Atualizar temas",
 					"request": {
 						"method": "PUT",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic dXN1YXJpbzFAZW1haWwuY29tOnNlbmhhMTI0",
+								"type": "default"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "",
@@ -164,7 +194,13 @@
 					"name": "Deletar temas",
 					"request": {
 						"method": "DELETE",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic dXN1YXJpbzFAZW1haWwuY29tOnNlbmhhMTI0",
+								"type": "default"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "",
@@ -200,10 +236,16 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic dXN1YXJpbzFAZW1haWwuY29tOnNlbmhhMTI0",
+								"type": "default"
+							}
+						],
 						"body": {
 							"mode": "raw",
-							"raw": "",
+							"raw": "{\r\n    \r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -231,7 +273,13 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic dXN1YXJpbzFAZW1haWwuY29tOnNlbmhhMTI0",
+								"type": "default"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "",
@@ -264,7 +312,13 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic dXN1YXJpbzFAZW1haWwuY29tOnNlbmhhMTI0",
+								"type": "default"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "",
@@ -293,10 +347,16 @@
 					"name": "Criar postagem",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic dXN1YXJpbzFAZW1haWwuY29tOnNlbmhhMTI0",
+								"type": "default"
+							}
+						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"titulo\" : \"Teste3\",\r\n    \"regiao\" : \"SP\",\r\n    \"texto\" : \"Terceiro teste de postagem\",\r\n    \"foto\" : \"...\",\r\n    \"tema\" : {\r\n        \"id\" : 1\r\n    }\r\n\r\n}",
+							"raw": "{\r\n    \"titulo\" : \"Teste1\",\r\n    \"regiao\" : \"SP\",\r\n    \"texto\" : \"Terceiro teste de postagem\",\r\n    \"foto\" : \"...\",\r\n    \"tema\" : {\r\n        \"id\" : 1\r\n    }\r\n\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -321,10 +381,16 @@
 					"name": "Atualizar postagem",
 					"request": {
 						"method": "PUT",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic dXN1YXJpbzFAZW1haWwuY29tOnNlbmhhMTI0",
+								"type": "default"
+							}
+						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id\" : 1,\r\n    \"titulo\" : \"TesteNovo\",\r\n    \"regiao\" : \"SP\",\r\n    \"texto\" : \"Novo teste de postagem\",\r\n    \"foto\" : \"...\",\r\n    \"tema\" : {\r\n        \"id\" : 1\r\n    }\r\n}",
+							"raw": "{\r\n    \"id\" : 1,\r\n    \"titulo\" : \"TesteNovo\",\r\n    \"regiao\" : \"SP\",\r\n    \"texto\" : \"Novo teste de postagem\",\r\n    \"foto\" : \"...\",\r\n    \"tema\" : {\r\n        \"id\" : 1\r\n    },\r\n    \"usuario\" : {\r\n        \"id\" : 1 \r\n}\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -349,7 +415,13 @@
 					"name": "Apagar postagem",
 					"request": {
 						"method": "DELETE",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic dXN1YXJpbzFAZW1haWwuY29tOnNlbmhhMTI0",
+								"type": "default"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "",
@@ -374,19 +446,45 @@
 					},
 					"response": []
 				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
 			]
 		},
 		{
 			"name": "Usuário",
 			"item": [
 				{
-					"name": "Buscar todas as postagens",
+					"name": "Buscar todos os usuarios",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic dXN1YXJpbzFAZW1haWwuY29tOnNlbmhhMTI0",
+								"type": "default"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "",
@@ -397,47 +495,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/postagens",
+							"raw": "http://localhost:8080/usuarios/all",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"postagens"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Buscar por título",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:8080/postagens/titulo/2",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"postagens",
-								"titulo",
-								"2"
+								"usuarios",
+								"all"
 							]
 						}
 					},
@@ -450,7 +516,13 @@
 					},
 					"request": {
 						"method": "GET",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic dXN1YXJpbzFAZW1haWwuY29tOnNlbmhhMTI0",
+								"type": "default"
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": "",
@@ -461,14 +533,14 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/postagens/2",
+							"raw": "http://localhost:8080/usuarios/2",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"postagens",
+								"usuarios",
 								"2"
 							]
 						}
@@ -476,13 +548,48 @@
 					"response": []
 				},
 				{
-					"name": "Criar postagem",
+					"name": "Criar cadastro",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tipoUsuario\" : \"Professor\",\r\n    \"nome\" : \"usuario2\",\r\n    \"usuario\" : \"usuario2@email.com\",\r\n    \"senha\" : \"senha124\",\r\n    \"foto\" :  \" \"\r\n    }\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/usuarios/cadastrar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"usuarios",
+								"cadastrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"titulo\" : \"Teste1\",\r\n    \"regiao\" : \"SP\",\r\n    \"texto\" : \"Primeiro teste de postagem\",\r\n    \"foto\" : \"...\",\r\n    \"tema\" : {\r\n        \"id\" : 1\r\n    },\r\n    \"usuario\" : {\r\n        \"id\" : 1\r\n    }\r\n}",
+							"raw": "{\r\n \"usuario\": \"usuario1@email.com\",\r\n \"senha\" : \"senha124\"\r\n\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -490,27 +597,34 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/postagens",
+							"raw": "http://localhost:8080/usuarios/logar",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"postagens"
+								"usuarios",
+								"logar"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "Atualizar postagem",
+					"name": "Atualizar usuário",
 					"request": {
 						"method": "PUT",
-						"header": [],
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic dXN1YXJpbzFAZW1haWwuY29tOnNlbmhhMTI0",
+								"type": "default"
+							}
+						],
 						"body": {
 							"mode": "raw",
-							"raw": "",
+							"raw": "{\r\n\r\n\r\n    \"id\": 1,\r\n        \"tipoUsuario\": \"Aluno\",\r\n        \"nome\": \"usuarioAtualizado\",\r\n        \"usuario\": \"usuario@email.com\",\r\n        \"senha\": \"senha123\",\r\n        \"foto\": \" \"\r\n             \r\n\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -518,34 +632,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/postagens",
+							"raw": "http://localhost:8080/usuarios/atualizar",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"postagens"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Apagar postagem",
-					"request": {
-						"method": "DELETE",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8080/postagens/2",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8080",
-							"path": [
-								"postagens",
-								"2"
+								"usuarios",
+								"atualizar"
 							]
 						}
 					},
