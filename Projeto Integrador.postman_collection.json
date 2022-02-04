@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "4309d16d-d6f5-4cc4-bf35-631397182ea5",
+		"_postman_id": "03166d2d-65c8-481d-bbf5-45a7b78148da",
 		"name": "Projeto Integrador",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -32,12 +32,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/temas/1",
-							"protocol": "http",
+							"raw": "https://piaguaviva.herokuapp.com/temas/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"piaguaviva",
+								"herokuapp",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"temas",
 								"1"
@@ -70,12 +71,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/temas",
-							"protocol": "http",
+							"raw": "https://piaguaviva.herokuapp.com/temas",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"piaguaviva",
+								"herokuapp",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"temas"
 							]
@@ -107,12 +109,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/temas/tema/teste",
-							"protocol": "http",
+							"raw": "https://piaguaviva.herokuapp.com/temas/tema/teste",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"piaguaviva",
+								"herokuapp",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"temas",
 								"tema",
@@ -143,12 +146,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/temas",
-							"protocol": "http",
+							"raw": "https://piaguaviva.herokuapp.com/temas",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"piaguaviva",
+								"herokuapp",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"temas"
 							]
@@ -169,7 +173,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "",
+							"raw": "{\r\n    \"id\": 2,\r\n    \"tema\": \"teste 2 atualizado\",\r\n    \"descricao\": \"segundo tema atualizar\"\r\n\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -177,12 +181,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/temas",
-							"protocol": "http",
+							"raw": "https://piaguaviva.herokuapp.com/temas",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"piaguaviva",
+								"herokuapp",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"temas"
 							]
@@ -211,14 +216,16 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/temas",
-							"protocol": "http",
+							"raw": "https://piaguaviva.herokuapp.com/temas/2",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"piaguaviva",
+								"herokuapp",
+								"com"
 							],
-							"port": "8080",
 							"path": [
-								"temas"
+								"temas",
+								"2"
 							]
 						}
 					},
@@ -253,12 +260,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/postagens",
-							"protocol": "http",
+							"raw": "https://piaguaviva.herokuapp.com/postagens",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"piaguaviva",
+								"herokuapp",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"postagens"
 							]
@@ -290,16 +298,17 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/postagens/titulo/teste",
-							"protocol": "http",
+							"raw": "https://piaguaviva.herokuapp.com/postagens/titulo/atualizado",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"piaguaviva",
+								"herokuapp",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"postagens",
 								"titulo",
-								"teste"
+								"atualizado"
 							]
 						}
 					},
@@ -329,15 +338,16 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/postagens/2",
-							"protocol": "http",
+							"raw": "https://piaguaviva.herokuapp.com/postagens/1",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"piaguaviva",
+								"herokuapp",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"postagens",
-								"2"
+								"1"
 							]
 						}
 					},
@@ -356,7 +366,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"titulo\" : \"Teste1\",\r\n    \"regiao\" : \"SP\",\r\n    \"texto\" : \"Terceiro teste de postagem\",\r\n    \"foto\" : \"...\",\r\n    \"tema\" : {\r\n        \"id\" : 1\r\n    }\r\n\r\n}",
+							"raw": "{\r\n    \"titulo\" : \"Teste3\",\r\n    \"regiao\" : \"SP\",\r\n    \"texto\" : \"terceiro teste de postagem\",\r\n    \"foto\" : \"...\",\r\n    \"tema\" : {\r\n        \"id\" : 1\r\n    }\r\n\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -364,12 +374,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/postagens",
-							"protocol": "http",
+							"raw": "https://piaguaviva.herokuapp.com/postagens",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"piaguaviva",
+								"herokuapp",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"postagens"
 							]
@@ -390,7 +401,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id\" : 1,\r\n    \"titulo\" : \"TesteNovo\",\r\n    \"regiao\" : \"SP\",\r\n    \"texto\" : \"Novo teste de postagem\",\r\n    \"foto\" : \"...\",\r\n    \"tema\" : {\r\n        \"id\" : 1\r\n    },\r\n    \"usuario\" : {\r\n        \"id\" : 1 \r\n}\r\n}",
+							"raw": "{\r\n    \"id\" : 1,\r\n    \"titulo\" : \"Teste1Atualizado\",\r\n    \"regiao\" : \"SP\",\r\n    \"texto\" : \"Novo teste de postagem\",\r\n    \"foto\" : \"...\",\r\n    \"tema\" : {\r\n        \"id\" : 1\r\n    },\r\n    \"usuario\" : {\r\n        \"id\" : 1 \r\n}\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -398,12 +409,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/postagens",
-							"protocol": "http",
+							"raw": "https://piaguaviva.herokuapp.com/postagens",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"piaguaviva",
+								"herokuapp",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"postagens"
 							]
@@ -432,12 +444,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/postagens/2",
-							"protocol": "http",
+							"raw": "https://piaguaviva.herokuapp.com/postagens/2",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"piaguaviva",
+								"herokuapp",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"postagens",
 								"2"
@@ -495,12 +508,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/usuarios/all",
-							"protocol": "http",
+							"raw": "https://piaguaviva.herokuapp.com/usuarios/all",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"piaguaviva",
+								"herokuapp",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"usuarios",
 								"all"
@@ -560,7 +574,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"tipoUsuario\" : \"Professor\",\r\n    \"nome\" : \"usuario2\",\r\n    \"usuario\" : \"usuario2@email.com\",\r\n    \"senha\" : \"senha124\",\r\n    \"foto\" :  \" \"\r\n    }\r\n",
+							"raw": "{\r\n    \"tipoUsuario\" : \"Aluno\",\r\n    \"nome\" : \"usuario2\",\r\n    \"usuario\" : \"usuario2@email.com\",\r\n    \"senha\" : \"senha124\",\r\n    \"foto\" :  \" \"\r\n    }\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -568,12 +582,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/usuarios/cadastrar",
-							"protocol": "http",
+							"raw": "https://piaguaviva.herokuapp.com/usuarios/cadastrar",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"piaguaviva",
+								"herokuapp",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"usuarios",
 								"cadastrar"
@@ -597,12 +612,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/usuarios/logar",
-							"protocol": "http",
+							"raw": "https://piaguaviva.herokuapp.com/usuarios/logar",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"piaguaviva",
+								"herokuapp",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"usuarios",
 								"logar"
@@ -632,12 +648,13 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/usuarios/atualizar",
-							"protocol": "http",
+							"raw": "https://piaguaviva.herokuapp.com/usuarios/atualizar",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"piaguaviva",
+								"herokuapp",
+								"com"
 							],
-							"port": "8080",
 							"path": [
 								"usuarios",
 								"atualizar"
